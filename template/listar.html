@@ -1,0 +1,32 @@
+
+<h2>Alimentos</h2>
+
+<a href="#/criar" class="btn btn-primary">Adicionar</a>
+
+<p class="message" ng-show="mensagem">{{mensagem}}</p>
+<br>
+<br>
+<div ng-show="alimentos.length">
+    <table class="table-striped">
+
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Descricao</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="alimento in alimentos">
+                <td>{{lembrete.Id}}</td>
+                <td>
+                    <a href="#/detalhes/{{alimento.Id}}">{{alimento.Descricao}}</a>
+                </td>
+                <td>
+                    <a class="btn btn-info" href="#/editar/{{alimento.Id}}">Editar</a>
+                    <a class="btn btn-danger" href="#/remover/{{alimento.Id}}">Apagar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

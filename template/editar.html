@@ -1,0 +1,11 @@
+<p class="message" ng-show="mensagem">{{mensagem}}</p>
+
+<form>
+	<div>
+	    <label>Descrição</label>
+
+	    <input ng-model="alimento.Descricao" type="text">
+	</div>
+
+	<button ng-click="salvar()" ng-disabled="mensagem">Salvar</button>
+</form>

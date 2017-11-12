@@ -1,0 +1,15 @@
+<p class="message" ng-show="mensagem">{{mensagem}}</p>
+
+<div ng-show="alimento.Id">
+    <h3>Você tem certeza que deseja remover esse alimento?</h3>
+
+    <div class="noteArea">
+        <h3>{{alimento.Descricao}}</h3>
+
+        <hr>
+
+        <p>{{alimento.descricao}}</p>
+    </div>
+
+	<button ng-click="remover()" ng-disabled="mensagem">Remover</button>
+</div>
